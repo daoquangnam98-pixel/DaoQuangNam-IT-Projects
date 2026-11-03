@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Demoappbanhang">
+
+        <!-- MÀN HÌNH ĐĂNG NHẬP - MỞ APP SẼ VÀO ĐÂY -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!-- ĐĂNG KÝ -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- MÀN HÌNH CHÍNH -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- THANH TOÁN -->
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+
+        <!-- GIỎ HÀNG -->
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+
+        <!-- DANH SÁCH ĐƠN HÀNG -->
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+
+        <!-- CHI TIẾT ĐƠN HÀNG -->
+        <activity
+            android:name=".OrderDetailActivity"
+            android:exported="false" />
+
+        <!-- CHI TIẾT SẢN PHẨM -->
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

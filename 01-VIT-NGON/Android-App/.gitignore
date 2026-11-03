@@ -1,0 +1,31 @@
+
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Android Studio
+*.iml
+.idea/
+.externalNativeBuild/
+.cxx/
+
+# Local configuration
+local.properties
+/local.properties
+
+# Generated files
+.DS_Store
+captures/
+*.apk
+*.aab
+
+# Sensitive information
+.env
+.env.*
+*.jks
+*.keystore
+secrets.properties
+
+# Logs
+*.log
